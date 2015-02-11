@@ -1,0 +1,8 @@
+<h1>Welcome Users</h1>
+<% @users.each do |user| %>
+<div class='user'>
+  <%= image_tag(user.avatar.url(:medium)) %>
+  <h4><%= user.full_name.titleize %></h4>
+  </div>
+
+  <% end %>
